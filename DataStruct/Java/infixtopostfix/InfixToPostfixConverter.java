@@ -61,20 +61,20 @@ public class InfixToPostfixConverter {
         // Pop all the operators from the stack.
         while (!stack.isEmpty())
         {
-            postfix[index++] = stack.pop(); // Add operator to postfix array
+            postfix[index++] = stack.pop(); 
         }
-        return new String(postfix, 0, index); // Return the postfix expression as a string
+        return new String(postfix, 0, index); 
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt user for stack size
+        
         System.out.print("Enter the stack size: ");
         int stackSize = scanner.nextInt();
         scanner.nextLine(); // Consume the newline
 
-        // Prompt user for infix expression
+        
         System.out.print("Enter the infix expression: ");
         String infixExpression = scanner.nextLine();
 
