@@ -67,13 +67,11 @@ public class InfixToPostfixConverter {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
         
         System.out.print("Enter the stack size: ");
         int stackSize = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline
-
+        scanner.nextLine();
         
         System.out.print("Enter the infix expression: ");
         String infixExpression = scanner.nextLine();
